@@ -1,6 +1,6 @@
 FROM sys_base:1.0
 RUN pip3 install --upgrade pip==20.2.4 -i https://pypi.douban.com/simple
-COPY requirements.txt /data
+COPY requirements.txt /data/
 WORKDIR "/data"
 RUN pip install -r requirements.txt --extra-index-url https://pypi.rasa.com/simple -i https://pypi.doubanio.com/simple
 #RUN pip3 install --upgrade pip -i https://pypi.douban.com/simple
